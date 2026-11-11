@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday Diksha 🎂</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Kalam:wght@400;700&family=Yatra+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="gl"></canvas>
+<div class="bar"><button class="mini" id="mute">🎵 Music</button><label class="mini">🎶 Your song<input type="file" id="file" accept="audio/*" hidden></label></div>
+
+<section class="stage on" id="s0">
+  <h1><span class="chars">Happy Birthday,</span><br><span class="en chars">Diksha</span> 💖</h1>
+  <p class="sub">12 November, a day made for you</p>
+  <button class="btn" data-go="1">Open your gift 🎁</button>
+</section>
+
+<section class="stage" id="s1">
+  <h1><span class="chars">Make a</span> <span class="en chars">wish</span><span class="chars">, Diksha</span></h1>
+  <p class="sub" id="wishmsg">Close your eyes, wish from the heart, then blow out the candle</p>
+  <button class="btn" id="blow">Blow out the candle 🎂</button>
+</section>
+
+<section class="stage" id="s2">
+  <div class="book" id="book"></div>
+  <div class="nav"><button id="prev" aria-label="Previous">‹</button><span class="dots" id="dots"></span><button id="next" aria-label="Next">›</button></div>
+</section>
+
+<section class="stage" id="s3">
+  <div class="letter">
+    <h2>Happy Birthday, my Diksha 💖</h2>
+    <div class="pull" style="margin-bottom:12px">तुम मेरी सबसे खूबसूरत कहानी हो।</div>
+    <p class="hp">आज 12 नवंबर है। दुनिया के लिए बस एक तारीख़, पर मेरे लिए वो दिन, जब मेरी सबसे प्यारी दुआ इस धरती पर आई।</p>
+    <p class="hp">तुमसे मिलने से पहले मैं सोचता था कि खुशी बड़ी-बड़ी चीज़ों में होती है। फिर तुम आईं, और मैंने जाना कि खुशी तो तुम्हारी एक छोटी-सी मुस्कान में, तुम्हारी एक आवाज़ में, तुम्हारे साथ बिताए आम-से पलों में छुपी होती है।</p>
+    <p class="hp">तुमने मुझे सिखाया कि प्यार दिखावे का नहीं, परवाह का नाम है। जब भी मैं थका, तुम्हारे एक "सब ठीक हो जाएगा" ने मुझे फिर से खड़ा कर दिया। मैं जो कुछ भी हूँ, उसमें तुम्हारा बहुत बड़ा हिस्सा है।</p>
+    <p class="hp">मेरे पास बड़े-बड़े तोहफ़े नहीं हैं, पर मेरा वक़्त, मेरा भरोसा और मेरी हर धड़कन तुम्हारी है। आज मैं वादा करता हूँ: हर मुश्किल में तुम्हारा हाथ थामे रहूँगा, तुम्हारे हर सपने में तुम्हारे साथ चलूँगा, और तुम्हारी हँसी को कभी कम नहीं होने दूँगा।</p>
+    <p class="hp">मेरी दुआ है कि तुम्हारे हिस्से में दुनिया की सारी खुशियाँ आएँ, और उन खुशियों में हर बार, हर जगह, मैं तुम्हारे साथ रहूँ।</p>
+    <p>I love you, Diksha. Happy Birthday! 🎂</p>
+    <p class="sign">Forever yours,<br>Ritik</p>
+    <div style="text-align:center"><button class="btn" id="again" style="animation:none;margin-top:6px">Watch again ✨</button></div>
+  </div>
+</section>
+
+<audio id="song" loop preload="auto"><source src="music/song.mp3"><source src="music/happy-birthday.wav"></audio>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/photos-data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
